@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clipper.controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="297.0" styleClass="left-form" stylesheets="@login.css">
+               <children>
+                  <FontAwesomeIcon fill="#7bd776" glyphName="ARCHIVE" layoutX="95.0" layoutY="127.0" selectionFill="BLACK" size="9em" />
+                  <Label layoutX="13.0" layoutY="167.0" text="CONTROLE DE ESTOQUE" textFill="#f2efef">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="346.0" text="Juazeiro do Norte - CE, CEP: 63.050-130">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="13.0" layoutY="330.0" text="Rua José Florêncio Vasconcelos, nº 165">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="362.0" text="Email: rogeriopcce@gmail.com">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="379.0" text="Telefone: (74) 99901-4966">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="314.0" text="JRFM - DESENVOLVIMENTO DE SISTEMAS" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="296.0" prefHeight="400.0" prefWidth="304.0" styleClass="right-form" stylesheets="@login.css">
+               <children>
+                  <TextField fx:id="txtUsuario" layoutX="42.0" layoutY="191.0" prefHeight="30.0" prefWidth="220.0" promptText="Digite o Email" styleClass="textfield">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="txtSenha" layoutX="42.0" layoutY="230.0" prefHeight="30.0" prefWidth="220.0" promptText="Digite a Senha" styleClass="textfield">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <FontAwesomeIcon glyphName="USER" layoutX="114.0" layoutY="108.0" size="7em" />
+                  <Button fx:id="btEntar" layoutX="42.0" layoutY="275.0" mnemonicParsing="false" onAction="#onEntrar" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" text="Entrar" />
+                  <Label layoutX="85.0" layoutY="129.0" text="Bem-Vindo" textFill="#dd3030">
+                     <font>
+                        <Font name="Berlin Sans FB" size="26.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btFechar" mnemonicParsing="false" onAction="#onFechar" prefHeight="24.0" prefWidth="59.0" styleClass="close" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="CLOSE" />
+                     </graphic>
+                  </Button>
+                  <Hyperlink layoutX="65.0" layoutY="350.0" text="Esqueceu a Senha? Clique aqui." />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

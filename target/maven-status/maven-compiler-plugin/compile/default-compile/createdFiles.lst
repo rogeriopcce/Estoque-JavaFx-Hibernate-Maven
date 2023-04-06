@@ -1,0 +1,8 @@
+clipper\errorsys\CriptografiaHash.class
+clipper\TesteConsultar.class
+clipper\Login.class
+clipper\TesteInserir.class
+clipper\entities\Usuarios.class
+clipper\errorsys\Alertas.class
+clipper\infra\DAO.class
+clipper\controller\LoginController.class
